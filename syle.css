@@ -1,0 +1,252 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.nav .sidebar-open {
+    display: none;
+}
+
+.nav {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4rem;
+}
+
+.nav ul {
+    display: none;
+}
+
+.nav .lft-side img {
+    width: 16px;
+    height: 13px;
+}
+
+.nav .lft-side {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav .rgt-side {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav .profile img {
+    width: 5vw;
+    height: 3vh;
+}
+
+.main .img1 img{
+    width: 100vw;
+    height: 50vh;
+}
+.main .img-thumbnails{
+    display: none;
+}
+
+.head {
+    padding: 20px;
+}
+
+.head p {
+    font-size: 0.8rem;
+    font-weight: 800;
+        color:#8b8f99;
+    letter-spacing: 0.15rem;
+    padding-bottom: 10px;
+}
+
+.head h1 {
+    font-size: 2rem;
+    opacity: 0.9;
+}
+
+.head article {
+    color:#8b8f99;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+    padding-top: 10px;
+}
+
+.main .prc-tag {
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    opacity: 0.8;
+}
+
+.prc-tag span {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 3px 8px;
+    margin-left: 10px;
+    opacity: 0.9;
+}
+
+.prc-tag .offer {
+    color: rgb(100, 99, 99);
+    background-color: white;
+}
+
+.footer button {
+    margin: 20px;
+    border: none;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+.footer .items {
+    gap: 6rem;
+    padding: 1rem 3.3rem;
+    font-size: 1.1rem;
+    font-weight: 800;
+    opacity: 0.9;
+}
+
+.footer .add-crt {
+    gap: 1rem;
+    padding: 1.1rem 6.5rem;
+    font-size: 1rem;
+    font-weight: 800;
+    background-color: #ff7d1b;
+    margin-bottom: 100px;
+    color: #401f08;
+    box-shadow: 0px 15px 15px #fde2cc;
+}
+
+@media screen and (min-width:1024px) {
+    .nav {
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #caceda;
+        padding-inline: 20px;
+    }
+    .nav .menu {
+        display: none;
+    }
+    .nav ul {
+        display: flex;
+        height: 4vh;
+        flex-direction: row;
+        list-style-type: none;
+    }
+    .nav a {
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: #626576;
+        padding: 1rem;
+        text-decoration: none;
+        opacity: 0.7;
+    }
+    .nav a:hover {
+        color: black;
+        border-bottom: 3px solid #ff7d1b;
+        padding: 2.6rem 1rem;
+        opacity: 1;
+    }
+    .nav .profile img {
+        height: 60px;
+        width: 60px;
+        cursor: pointer;
+    }
+    .main {
+        width: 100vw;
+        height: 85vh;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+    .main .lft-side{
+        width: 40vw;
+    }
+    .main .img1 img{
+        width: 28vw;
+        height: 50vh;
+        border-radius: 10px;
+    }
+    .main .img-thumbnails{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .main .img-thumbnails img {
+        border-radius: 6px;
+        margin: 20px 0;
+        width: 6vw;
+        height: 11vh;
+        border-radius: 10px;
+    }
+    .main .img-thumbnails img:hover{
+        opacity: 0.4;
+        border: 2px solid #ff7d1b;
+        cursor: pointer;
+    }
+    .main .rgt-side{
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: start;
+        padding-right: 20rem;
+    }
+    .main .rgt-side h1{
+        font-size: 2.5rem;
+        color: #131418;
+        line-height: 2.5rem;
+    }
+    .main article {
+        font-weight: 600;
+        /* margin-top: 1rem; */
+        line-height: 1.4rem;
+    }
+    .main .prc-tag {
+    padding: 0px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    .main .offer {
+        padding: 10px 0;
+
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+    }
+    .footer button {
+        margin: 10px;
+    }
+    .footer button:hover{
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    .footer .items {
+        gap: 2rem;
+        padding: 1rem 2rem;
+    }
+    .footer .add-crt {
+        gap: 2rem;
+        padding: 1rem 4rem;
+    }
+}
